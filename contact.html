@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Magnolia Party Rentals - Bluffton & Hilton Head, SC</title>
+    <meta name="description" content="Get in touch with Magnolia Party Rentals in Bluffton, SC. Call, text, or email us for yard games, bounce houses, and event equipment rentals.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Geist:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            charcoal: '#1D1D1B',
+                            cream: '#EAE4DA',
+                            periwinkle: '#808BC5',
+                            teal: '#245E55'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Instrument Serif"', 'serif'],
+                        geist: ['Geist', 'sans-serif'],
+                        sans: ['Arimo', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        body {
+            background-color: #EAE4DA;
+            color: #1D1D1B;
+            font-family: 'Arimo', sans-serif;
+        }
+
+        .font-logo {
+            font-family: 'Instrument Serif', serif;
+        }
+
+        .font-heading {
+            font-family: 'Geist', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-brand-cream text-brand-charcoal flex flex-col min-h-screen selection:bg-brand-periwinkle selection:text-white">
+
+    <!-- Header / Nav (Brand Green background) -->
+    <header class="bg-brand-teal text-white sticky top-0 z-50 shadow-md border-b-4 border-brand-periwinkle">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            
+            <!-- Desktop Nav Left -->
+            <div class="hidden md:flex items-center space-x-8 font-heading font-medium text-sm tracking-wide">
+                <a href="contact.html" class="text-brand-periwinkle transition-colors duration-200">CONTACT</a>
+                <a href="about.html" class="hover:text-brand-periwinkle transition-colors duration-200">ABOUT/FAQ</a>
+            </div>
+
+            <!-- Mobile Hamburger Button -->
+            <button id="mobile-menu-btn" class="md:hidden text-white p-2 focus:outline-none" aria-label="Toggle Menu">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+
+            <!-- Center Brand Logo -->
+            <a href="index.html" class="text-center group">
+                <span class="font-logo text-3xl sm:text-4xl text-white group-hover:text-brand-periwinkle transition-colors duration-200 block leading-none">
+                    Magnolia Party Rentals
+                </span>
+            </a>
+
+            <!-- Desktop Nav Right -->
+            <div class="hidden md:flex items-center space-x-8 font-heading font-medium text-sm tracking-wide">
+                <a href="catalog.html" class="hover:text-brand-periwinkle transition-colors duration-200">CATALOG</a>
+                <a href="cart.html" class="hover:text-brand-periwinkle transition-colors duration-200 flex items-center">
+                    CART <sup class="ml-0.5 text-xs text-brand-periwinkle font-bold font-heading">(0)</sup>
+                </a>
+            </div>
+
+            <!-- Mobile Cart Button -->
+            <a href="cart.html" class="md:hidden relative p-2 text-white">
+                <i class="fa-solid fa-bag-shopping text-xl"></i>
+                <span class="absolute -top-1 -right-1 bg-brand-periwinkle text-brand-charcoal text-[10px] font-bold font-heading rounded-none h-4 w-4 flex items-center justify-center">0</span>
+            </a>
+        </nav>
+
+        <!-- Mobile Navigation Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-brand-teal border-t border-white/10 px-4 py-4 space-y-3 font-heading font-medium text-sm">
+            <a href="contact.html" class="block text-brand-periwinkle py-1">CONTACT</a>
+            <a href="about.html" class="block text-white hover:text-brand-periwinkle py-1">ABOUT/FAQ</a>
+            <a href="catalog.html" class="block text-white hover:text-brand-periwinkle py-1">CATALOG</a>
+            <a href="cart.html" class="block text-white hover:text-brand-periwinkle py-1">CART (0)</a>
+        </div>
+    </header>
+
+    <main class="flex-grow bg-brand-cream">
+        
+        <!-- HERO SECTION -->
+        <section class="relative min-h-[calc(100vh-80px)] flex items-center justify-center px-4 sm:px-6 lg:px-8 py-20 overflow-hidden bg-brand-charcoal border-b-2 border-brand-charcoal">
+            <!-- Background Image -->
+            <div class="absolute inset-0 z-0">
+                <img 
+                    src="img/3H7A2793.jpg" 
+                    alt="Contact Magnolia Party Rentals for Bluffton SC party equipment" 
+                    class="w-full h-full object-cover"
+                    onerror="this.src='https://placehold.co/1920x1080/245E55/EAE4DA?text=Contact+Magnolia+Party+Rentals'"
+                />
+                <div class="absolute inset-0 bg-brand-charcoal/50 backdrop-blur-[2px]"></div>
+            </div>
+
+            <!-- Hero Text on Top -->
+            <div class="relative z-10 max-w-4xl mx-auto text-center space-y-6 text-white px-4">
+                <h1 class="font-heading font-medium text-4xl sm:text-5xl lg:text-6xl text-white leading-tight">
+                    We're Here To Help You Plan The Perfect Lowcountry Party!
+                </h1>
+                
+                <p class="font-sans text-base sm:text-lg text-brand-cream/90 max-w-2xl mx-auto leading-relaxed">
+                    Have questions about yard games, bounce house dimensions, or custom delivery times in Bluffton or Hilton Head? Reach out to our local team directly!
+                </p>
+
+                <div class="pt-4 flex flex-wrap items-center justify-center gap-4">
+                    <a href="#contact-details" class="inline-block px-8 py-4 rounded-none bg-brand-periwinkle text-brand-charcoal font-heading font-medium text-base hover:bg-brand-teal hover:text-white transition-all border-2 border-brand-charcoal shadow-[4px_4px_0px_0px_rgba(29,29,27,1)] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-none">
+                        Contact Info Below <i class="fa-solid fa-arrow-down ml-2"></i>
+                    </a>
+                    <a href="catalog.html" class="inline-block px-8 py-4 rounded-none bg-brand-teal text-white font-heading font-medium text-base hover:bg-brand-charcoal transition-all border-2 border-brand-charcoal shadow-[4px_4px_0px_0px_rgba(29,29,27,1)] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-none">
+                        Browse Catalog Instantly
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- INSTANT BOOKING BANNER -->
+        <section class="py-12 bg-brand-periwinkle border-b-2 border-brand-charcoal text-brand-cream">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="bg-white text-brand-charcoal p-6 sm:p-8 border-2 border-brand-charcoal shadow-[8px_8px_0px_0px_rgba(29,29,27,1)] flex flex-col md:flex-row items-center justify-between gap-6">
+                    <div class="flex items-start space-x-4">
+                        <div class="w-12 h-12 bg-brand-teal text-white border-2 border-brand-charcoal flex items-center justify-center flex-shrink-0 text-xl">
+                            <i class="fa-solid fa-bolt"></i>
+                        </div>
+                        <div class="space-y-1">
+                            <h2 class="font-heading font-medium text-xl text-brand-charcoal">No Need To Call Before Booking!</h2>
+                            <p class="font-sans text-sm text-brand-charcoal/80 leading-relaxed max-w-2xl">
+                                Our live inventory, available dates, and package pricing are synced in real time. Pick your items, choose your event date, and lock in your delivery online without waiting for a quote!
+                            </p>
+                        </div>
+                    </div>
+                    <a href="catalog.html" class="flex-shrink-0 px-6 py-3 bg-brand-teal text-white font-heading font-medium text-sm hover:bg-brand-charcoal transition-all border-2 border-brand-charcoal shadow-[4px_4px_0px_0px_rgba(29,29,27,1)] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-none">
+                        Book Online Now <i class="fa-solid fa-arrow-right ml-2 text-brand-periwinkle"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- DIRECT CONTACT INFORMATION & DETAILS -->
+        <section class="py-20 bg-brand-cream px-4 sm:px-6 lg:px-8 border-b-2 border-brand-charcoal" id="contact-details">
+            <div class="max-w-5xl mx-auto space-y-12">
+                
+                <div class="text-center space-y-4 max-w-3xl mx-auto">
+                    <h2 class="font-heading font-medium text-3xl sm:text-4xl text-brand-charcoal">
+                        Get In Touch With Our Team
+                    </h2>
+                    <p class="font-sans text-base sm:text-lg text-brand-charcoal/80 leading-relaxed">
+                        We are a locally owned party supply, lawn game, and event rental team serving Beaufort County. Contact us directly via phone, text, or email for quick assistance!
+                    </p>
+                </div>
+
+                <!-- Direct Contact Cards Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    
+                    <!-- Call / Text Card -->
+                    <div class="p-8 bg-white border-2 border-brand-charcoal shadow-[8px_8px_0px_0px_rgba(29,29,27,1)] flex flex-col justify-between space-y-6">
+                        <div class="space-y-4">
+                            <div class="w-14 h-14 bg-brand-periwinkle text-brand-charcoal border-2 border-brand-charcoal flex items-center justify-center text-2xl">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-heading font-medium text-2xl text-brand-charcoal">Call or Text</h3>
+                                <p class="font-sans text-sm text-brand-charcoal/70 mt-1">Speak directly with our local Bluffton team or send us a text message anytime.</p>
+                            </div>
+                        </div>
+                        <a href="tel:8435331711" class="inline-block w-full py-4 bg-brand-teal text-white font-heading font-medium text-center text-lg hover:bg-brand-charcoal transition-all border-2 border-brand-charcoal shadow-[4px_4px_0px_0px_rgba(29,29,27,1)] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-none">
+                            (843) 533-1711
+                        </a>
+                    </div>
+
+                    <!-- Email Card -->
+                    <div class="p-8 bg-white border-2 border-brand-charcoal shadow-[8px_8px_0px_0px_rgba(29,29,27,1)] flex flex-col justify-between space-y-6">
+                        <div class="space-y-4">
+                            <div class="w-14 h-14 bg-brand-teal text-white border-2 border-brand-charcoal flex items-center justify-center text-2xl">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-heading font-medium text-2xl text-brand-charcoal">Email Us</h3>
+                                <p class="font-sans text-sm text-brand-charcoal/70 mt-1">Send us an email with details about your setup space, park permits, or custom packages.</p>
+                            </div>
+                        </div>
+                        <a href="mailto:hello@magnolia.rentals" class="inline-block w-full py-4 bg-brand-periwinkle text-brand-charcoal font-heading font-medium text-center text-base sm:text-lg hover:bg-brand-teal hover:text-white transition-all border-2 border-brand-charcoal shadow-[4px_4px_0px_0px_rgba(29,29,27,1)] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-none">
+                            hello@magnolia.rentals
+                        </a>
+                    </div>
+
+                </div>
+
+                <!-- Secondary Info Row (Service Area & Operating Hours) -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    
+                    <!-- Service Area -->
+                    <div class="p-6 bg-white border-2 border-brand-charcoal shadow-[6px_6px_0px_0px_rgba(29,29,27,1)] flex items-start space-x-4">
+                        <div class="w-12 h-12 bg-brand-periwinkle text-brand-charcoal border-2 border-brand-charcoal flex items-center justify-center flex-shrink-0 text-xl">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-heading font-medium text-lg text-brand-charcoal uppercase tracking-wider">Service Area</h4>
+                            <p class="font-sans text-sm text-brand-charcoal/80 mt-1 leading-relaxed">
+                                Bluffton, Hilton Head Island, Okatie, Hardeeville, & Beaufort, SC.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Hours -->
+                    <div class="p-6 bg-white border-2 border-brand-charcoal shadow-[6px_6px_0px_0px_rgba(29,29,27,1)] flex items-start space-x-4">
+                        <div class="w-12 h-12 bg-brand-teal text-white border-2 border-brand-charcoal flex items-center justify-center flex-shrink-0 text-xl">
+                            <i class="fa-solid fa-clock"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-heading font-medium text-lg text-brand-charcoal uppercase tracking-wider">Operating Hours</h4>
+                            <p class="font-sans text-sm text-brand-charcoal/80 mt-1 leading-relaxed">
+                                Monday – Friday: 8:00 AM – 6:00 PM<br>Saturday: 10:00 AM – 4:00 PM<br>
+                                (Deliveries Available Outside of Hours)
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER (Brand Teal background) -->
+    <footer class="bg-brand-teal text-white border-t-4 border-brand-periwinkle py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
+            
+            <!-- Left / Center: Copyright & Legal Trigger -->
+            <div class="text-center md:text-left space-y-2">
+                <p class="font-logo text-3xl text-white">Magnolia Party Rentals</p>
+                <p class="font-sans text-xs text-white/80">
+                    &copy; 2026 Magnolia Party Rentals. All rights reserved. Bluffton & Hilton Head, SC.
+                </p>
+                <button id="terms-modal-trigger" class="font-sans text-xs text-brand-periwinkle underline hover:text-white transition-colors">
+                    Terms & Conditions
+                </button>
+            </div>
+
+            <!-- Right: Navigation Links -->
+            <div class="flex flex-wrap justify-center md:justify-end gap-6 font-heading font-medium text-xs tracking-wider">
+                <a href="index.html" class="hover:text-brand-periwinkle transition-colors">HOME</a>
+                <a href="contact.html" class="hover:text-brand-periwinkle transition-colors">CONTACT</a>
+                <a href="about.html" class="hover:text-brand-periwinkle transition-colors">ABOUT/FAQ</a>
+                <a href="catalog.html" class="hover:text-brand-periwinkle transition-colors">CATALOG</a>
+                <a href="cart.html" class="hover:text-brand-periwinkle transition-colors">CART</a>
+            </div>
+
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Navigation Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+
+        // Terms Modal Trigger
+        const termsBtn = document.getElementById('terms-modal-trigger');
+        if (termsBtn) {
+            termsBtn.addEventListener('click', () => {
+                const modal = document.createElement('div');
+                modal.className = 'fixed inset-0 z-50 bg-black/70 flex items-center justify-center p-4';
+                modal.innerHTML = `
+                    <div class="bg-white text-brand-charcoal p-6 max-w-lg w-full border-2 border-brand-charcoal shadow-[8px_8px_0px_0px_rgba(29,29,27,1)] space-y-4">
+                        <h3 class="font-heading font-medium text-xl text-brand-teal">Terms & Conditions</h3>
+                        <p class="font-sans text-xs text-brand-charcoal/80 leading-relaxed max-h-60 overflow-y-auto">
+                            By renting equipment from Magnolia Party Rentals in Bluffton, SC, you agree to ensure responsible adult supervision at all times during operation. Equipment must remain anchored as installed by our delivery crew. Full cancellation policy: 100% credit for weather cancellations prior to delivery.
+                        </p>
+                        <button id="close-terms-modal" class="px-4 py-2 bg-brand-teal text-white font-heading font-medium text-sm border border-brand-charcoal hover:bg-brand-charcoal transition-colors">
+                            Close
+                        </button>
+                    </div>
+                `;
+                document.body.appendChild(modal);
+                document.getElementById('close-terms-modal').addEventListener('click', () => {
+                    document.body.removeChild(modal);
+                });
+            });
+        }
+    </script>
+</body>
+</html>

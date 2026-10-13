@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magnolia Party Rentals | Fun Party & Game Rentals - Bluffton, SC</title>
+    <meta name="description" content="Fun and easy party rentals in Bluffton & Hilton Head, SC! Lawn games, bounce houses, tables, chairs, concessions & party gear backed by real-time inventory.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Geist:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            charcoal: '#1D1D1B',
+                            cream: '#EAE4DA',
+                            periwinkle: '#808BC5',
+                            teal: '#245E55'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Instrument Serif"', 'serif'],
+                        geist: ['Geist', 'sans-serif'],
+                        sans: ['Arimo', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        body {
+            background-color: #EAE4DA;
+            color: #1D1D1B;
+            font-family: 'Arimo', sans-serif;
+        }
+
+        .font-logo {
+            font-family: 'Instrument Serif', serif;
+        }
+
+        .font-heading {
+            font-family: 'Geist', sans-serif;
+        }
+
+        .testimonial-slide {
+            transition: opacity 0.5s ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-brand-cream text-brand-charcoal flex flex-col min-h-screen selection:bg-brand-periwinkle selection:text-white">
+
+    <!-- Header / Nav (Brand Green background) -->
+    <header class="bg-brand-teal text-white sticky top-0 z-50 shadow-md border-b-4 border-brand-periwinkle">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            
+            <!-- Desktop Nav Left -->
+            <div class="hidden md:flex items-center space-x-8 font-heading font-medium text-sm tracking-wide">
+                <a href="contact.html" class="hover:text-brand-periwinkle transition-colors duration-200">CONTACT</a>
+                <a href="about.html" class="hover:text-brand-periwinkle transition-colors duration-200">ABOUT/FAQ</a>
+            </div>
+
+            <!-- Mobile Hamburger Button -->
+            <button id="mobile-menu-btn" class="md:hidden text-white p-2 focus:outline-none" aria-label="Toggle Menu">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+
+            <!-- Center Brand Logo (Instrument Serif used exclusively for logo) -->
+            <a href="index.html" class="text-center group">
+                <span class="font-logo text-3xl sm:text-4xl text-white group-hover:text-brand-periwinkle transition-colors duration-200 block leading-none">
+                    Magnolia Party Rentals
+                </span>
+            </a>
+
+            <!-- Desktop Nav Right -->
+            <div class="hidden md:flex items-center space-x-8 font-heading font-medium text-sm tracking-wide">
+                <a href="catalog.html" class="hover:text-brand-periwinkle transition-colors duration-200">CATALOG</a>
+                <a href="cart.html" class="hover:text-brand-periwinkle transition-colors duration-200 flex items-center">
+                    CART <sup class="ml-0.5 text-xs text-brand-periwinkle font-bold font-heading">(0)</sup>
+                </a>
+            </div>
+
+            <!-- Mobile Cart Button -->
+            <a href="cart.html" class="md:hidden relative p-2 text-white">
+                <i class="fa-solid fa-bag-shopping text-xl"></i>
+                <span class="absolute -top-1 -right-1 bg-brand-periwinkle text-brand-charcoal text-[10px] font-bold font-heading rounded-none h-4 w-4 flex items-center justify-center">0</span>
+            </a>
+        </nav>
+
+        <!-- Mobile Navigation Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-brand-teal border-t border-white/10 px-4 py-4 space-y-3 font-heading font-medium text-sm">
+            <a href="contact.html" class="block text-white hover:text-brand-periwinkle py-1">CONTACT</a>
+            <a href="about.html" class="block text-white hover:text-brand-periwinkle py-1">ABOUT/FAQ</a>
+            <a href="catalog.html" class="block text-white hover:text-brand-periwinkle py-1">CATALOG</a>
+            <a href="cart.html" class="block text-white hover:text-brand-periwinkle py-1">CART (0)</a>
+        </div>
+    </header>
+    <main class="flex-grow bg-brand-cream">
+        
+        <!-- HERO SECTION (Playful Party & Game Rental Vibe) -->
+        <section class="relative min-h-[calc(100vh-80px)] flex items-center px-4 sm:px-6 lg:px-8 py-20 overflow-hidden bg-brand-cream">
+            <!-- Background Image with Overlay -->
+            <div class="absolute inset-0 z-0">
+                <img 
+                    src="img/3H7A2792 (1).jpg" 
+                    alt="Fun outdoor birthday party and yard games in Bluffton, SC" 
+                    class="w-full h-full object-cover"
+                    onerror="this.src='https://placehold.co/1920x1080/808BC5/1D1D1B?text=Bluffton+Party+%26+Game+Rentals'"
+                />
+                <div class="absolute inset-0 bg-brand-charcoal/75 backdrop-blur-[1px]"></div>
+            </div>
+
+            <div class="relative z-10 max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center text-white">
+                
+                <!-- SEO Heading (Left Aligned) -->
+                <div class="lg:col-span-7 text-left space-y-6">
+                    <h1 class="font-heading font-medium text-4xl sm:text-5xl lg:text-6xl text-white leading-tight">
+                        Turn Any Lowcountry Gathering Into an Unforgettable Party!
+                    </h1>
+                </div>
+
+                <!-- SEO Paragraph & CTA (Right Aligned Column - Periwinkle Accent Box) -->
+                <div class="lg:col-span-5 text-left flex flex-col justify-center bg-brand-periwinkle text-brand-cream p-8 sm:p-10 rounded-none border-2 border-brand-charcoal shadow-[8px_8px_0px_0px_rgba(29,29,27,1)]">
+                    <p class="font-sans text-base sm:text-lg text-brand-cream leading-relaxed mb-8">
+                        From giant lawn games and photo stations to concessions, and tastle umbrellas—Magnolia Party Rentals brings instant high-energy fun to birthdays, block parties, backyard BBQs, and school events across Bluffton and Hilton Head!
+                    </p>
+                    <div>
+                        <a href="catalog.html" class="inline-block w-full sm:w-auto px-8 py-4 rounded-none bg-brand-teal text-white font-heading font-medium text-base hover:bg-brand-charcoal transition-all text-center border-2 border-brand-charcoal shadow-[4px_4px_0px_0px_rgba(29,29,27,1)] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-none">
+                            View The Catalog <i class="fa-solid fa-arrow-right ml-2 text-brand-periwinkle"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- WHY US SECTION -->
+        <section class="py-20 bg-brand-cream px-4 sm:px-6 lg:px-8 border-b-2 border-brand-charcoal">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-left max-w-3xl mb-12">
+                    <h2 class="font-heading font-medium text-3xl sm:text-4xl text-brand-charcoal">Why Neighbors Choose Us For Party Fun</h2>
+                </div>
+
+                <!-- Featured Image Banner in Why Us Section -->
+                <div class="mb-12 rounded-none overflow-hidden border-2 border-brand-charcoal shadow-[6px_6px_0px_0px_rgba(29,29,27,1)] max-h-[320px]">
+                    <img 
+                        src="img/3H7A2793.jpg" 
+                        alt="Giant lawn games and outdoor party fun rentals" 
+                        class="w-full h-full object-cover"
+                        onerror="this.src='https://placehold.co/1400x400/808BC5/1D1D1B?text=Outdoor+Party+Games+%26+Rentals'"
+                    />
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Feature Card 1 -->
+                    <div class="p-8 rounded-none bg-white border-2 border-brand-charcoal shadow-[6px_6px_0px_0px_rgba(29,29,27,1)] flex flex-col justify-between">
+                        <div>
+                            <div class="w-14 h-14 rounded-none bg-brand-periwinkle text-brand-charcoal border-2 border-brand-charcoal flex items-center justify-center mb-6 text-2xl shadow-[3px_3px_0px_0px_rgba(29,29,27,1)]">
+                                <i class="fa-solid fa-bolt"></i>
+                            </div>
+                            <h3 class="font-heading font-medium text-xl text-brand-charcoal mb-3">Live Booking & Dates</h3>
+                            <p class="font-sans text-brand-charcoal/80 leading-relaxed text-sm sm:text-base">
+                                Instantly check exact availability for lawn games, tables, and party gear for your event date in seconds.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Feature Card 2 -->
+                    <div class="p-8 rounded-none bg-white border-2 border-brand-charcoal shadow-[6px_6px_0px_0px_rgba(29,29,27,1)] flex flex-col justify-between">
+                        <div>
+                            <div class="w-14 h-14 rounded-none bg-brand-teal text-white border-2 border-brand-charcoal flex items-center justify-center mb-6 text-2xl shadow-[3px_3px_0px_0px_rgba(29,29,27,1)]">
+                                <i class="fa-solid fa-dice"></i>
+                            </div>
+                            <h3 class="font-heading font-medium text-xl text-brand-charcoal mb-3">Party Games & Gear</h3>
+                            <p class="font-sans text-brand-charcoal/80 leading-relaxed text-sm sm:text-base">
+                                From giant Connect 4, inflateable soccer darts, and nerf night packages to cnow cone machines and custom photo booths, we bring the excitement!
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Feature Card 3 -->
+                    <div class="p-8 rounded-none bg-white border-2 border-brand-charcoal shadow-[6px_6px_0px_0px_rgba(29,29,27,1)] flex flex-col justify-between">
+                        <div>
+                            <div class="w-14 h-14 rounded-none bg-brand-periwinkle text-brand-charcoal border-2 border-brand-charcoal flex items-center justify-center mb-6 text-2xl shadow-[3px_3px_0px_0px_rgba(29,29,27,1)]">
+                                <i class="fa-solid fa-truck-fast"></i>
+                            </div>
+                            <h3 class="font-heading font-medium text-xl text-brand-charcoal mb-3">Stress-Free Setup</h3>
+                            <p class="font-sans text-brand-charcoal/80 leading-relaxed text-sm sm:text-base">
+                                Free pickup right on schedule. Or choose our delivery package for anywhere in Bluffton or Hilton Head.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-12 text-center sm:text-left">
+                    <a href="catalog.html" class="inline-block px-8 py-4 rounded-none bg-brand-periwinkle text-brand-charcoal font-heading font-medium text-base hover:bg-brand-teal hover:text-white transition-all border-2 border-brand-charcoal shadow-[4px_4px_0px_0px_rgba(29,29,27,1)] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-none">
+                        View The Catalog <i class="fa-solid fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- TESTIMONIALS SLIDER SECTION (Purple Periwinkle Banner over Cream Background) -->
+        <section class="py-20 bg-brand-periwinkle border-b-2 border-brand-charcoal text-brand-cream">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="max-w-4xl mx-auto text-center">
+                    <h2 class="font-heading font-medium text-3xl sm:text-4xl text-brand-cream mb-10">What Lowcountry Families Say</h2>
+                    
+                    <div class="relative min-h-[220px] flex items-center justify-center bg-white text-brand-charcoal border-2 border-brand-charcoal p-8 shadow-[6px_6px_0px_0px_rgba(29,29,27,1)]">
+                        <!-- Slide 1 -->
+                        <div class="testimonial-slide absolute inset-0 p-8 flex flex-col justify-center items-center opacity-100 transition-opacity duration-500" id="slide-0">
+                            <p class="font-sans text-lg sm:text-xl text-brand-charcoal leading-relaxed mb-6 max-w-2xl">
+                                "The giant yard games and popcorn machine made our kid’s birthday party in Bluffton an absolute hit! Being able to check available dates live on their catalog made planning so easy."
+                            </p>
+                            <span class="font-heading font-medium text-brand-teal text-base">— Sarah M., May River Neighborhood</span>
+                        </div>
+
+                        <!-- Slide 2 -->
+                        <div class="testimonial-slide absolute inset-0 p-8 flex flex-col justify-center items-center opacity-0 pointer-events-none transition-opacity duration-500" id="slide-1">
+                            <p class="font-sans text-lg sm:text-xl text-brand-charcoal leading-relaxed mb-6 max-w-2xl">
+                                "Rented lawn cornhole, giant Jenga, folding tables, and tents for our neighborhood block party in Hilton Head. Clean gear, super friendly delivery, and super fun experience!"
+                            </p>
+                            <span class="font-heading font-medium text-brand-teal text-base">— David L., Plantation Host</span>
+                        </div>
+
+                        <!-- Slide 3 -->
+                        <div class="testimonial-slide absolute inset-0 p-8 flex flex-col justify-center items-center opacity-0 pointer-events-none transition-opacity duration-500" id="slide-2">
+                            <p class="font-sans text-lg sm:text-xl text-brand-charcoal leading-relaxed mb-6 max-w-2xl">
+                                "Magnolia Party Rentals is our go-to for family reunions in Old Town. The game rentals keep kids and adults entertained for hours. Highly recommend!"
+                            </p>
+                            <span class="font-heading font-medium text-brand-teal text-base">— Amanda K., Old Town Bluffton</span>
+                        </div>
+                    </div>
+
+                    <!-- Slider Controls / Indicators -->
+                    <div class="flex justify-center space-x-3 mt-8">
+                        <button class="slider-dot w-4 h-4 rounded-none bg-brand-charcoal border border-brand-cream transition-all duration-300" onclick="setSlide(0)" aria-label="Go to slide 1"></button>
+                        <button class="slider-dot w-4 h-4 rounded-none bg-brand-cream/50 border border-brand-charcoal transition-all duration-300" onclick="setSlide(1)" aria-label="Go to slide 2"></button>
+                        <button class="slider-dot w-4 h-4 rounded-none bg-brand-cream/50 border border-brand-charcoal transition-all duration-300" onclick="setSlide(2)" aria-label="Go to slide 3"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- OUR PROCESS SECTION (4 Parts on Cream Background) -->
+        <section class="py-20 bg-brand-cream px-4 sm:px-6 lg:px-8 border-b-2 border-brand-charcoal">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-left max-w-3xl mb-12">
+                    <h2 class="font-heading font-medium text-3xl sm:text-4xl text-brand-charcoal">How To Get The Party Started</h2>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- Step 1 -->
+                    <div class="p-6 rounded-none bg-white border-2 border-brand-charcoal shadow-[5px_5px_0px_0px_rgba(29,29,27,1)] relative">
+                        <span class="font-heading font-medium text-3xl text-brand-periwinkle mb-4 block">01</span>
+                        <h3 class="font-heading font-medium text-lg text-brand-charcoal mb-2">Pick Games & Party Gear</h3>
+                        <p class="font-sans text-sm text-brand-charcoal/80">
+                            Browse games, bounce rentals, seating, and concessions with real-time availability markers.
+                        </p>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="p-6 rounded-none bg-white border-2 border-brand-charcoal shadow-[5px_5px_0px_0px_rgba(29,29,27,1)] relative">
+                        <span class="font-heading font-medium text-3xl text-brand-periwinkle mb-4 block">02</span>
+                        <h3 class="font-heading font-medium text-lg text-brand-charcoal mb-2">Choose Event Dates</h3>
+                        <p class="font-sans text-sm text-brand-charcoal/80">
+                            Select your party timeline directly in your cart to lock in items for your weekend or weekday event.
+                        </p>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="p-6 rounded-none bg-white border-2 border-brand-charcoal shadow-[5px_5px_0px_0px_rgba(29,29,27,1)] relative">
+                        <span class="font-heading font-medium text-3xl text-brand-periwinkle mb-4 block">03</span>
+                        <h3 class="font-heading font-medium text-lg text-brand-charcoal mb-2">Easy Online Checkout</h3>
+                        <p class="font-sans text-sm text-brand-charcoal/80">
+                            Confirm your delivery address or pickup time and lock in your reservation through our seamless online booking. Secure payment powered by Stripe.
+                        </p>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="p-6 rounded-none bg-white border-2 border-brand-charcoal shadow-[5px_5px_0px_0px_rgba(29,29,27,1)] relative">
+                        <span class="font-heading font-medium text-3xl text-brand-periwinkle mb-4 block">04</span>
+                        <h3 class="font-heading font-medium text-lg text-brand-charcoal mb-2">Let's Party!</h3>
+                        <p class="font-sans text-sm text-brand-charcoal/80">
+                            Pickup or delivery is on time and stress free. Enjoy your party and return items to us or have us pick them up when your event is over.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mt-12 text-center sm:text-left">
+                    <a href="catalog.html" class="inline-block px-8 py-4 rounded-none bg-brand-teal text-white font-heading font-medium text-base hover:bg-brand-charcoal transition-all border-2 border-brand-charcoal shadow-[4px_4px_0px_0px_rgba(29,29,27,1)] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-none">
+                        View The Catalog <i class="fa-solid fa-arrow-right ml-2 text-brand-periwinkle"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEASONAL DEALS SECTION (Purple Accent Banner on Cream Base) -->
+        <section class="py-16 bg-brand-periwinkle border-b-2 border-brand-charcoal text-brand-cream">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-8">
+                <div class="space-y-3 max-w-2xl">
+                    
+                    <h2 class="font-heading font-medium text-2xl sm:text-3xl text-brand-cream">Lowcountry Party & Game Bundle Promo</h2>
+                    <p class="font-sans text-brand-cream text-base">
+                        Planning a birthday party or weekend gathering in Bluffton? Save 10% on game packages and photo combos when booking 30 days in advance!
+                    </p>
+                </div>
+
+                <div class="flex flex-col sm:flex-row items-center gap-4 w-full md:w-auto">
+                    <div class="px-6 py-3 rounded-none bg-white text-brand-charcoal font-heading font-medium text-lg text-center tracking-wider w-full sm:w-auto border-2 border-brand-charcoal">
+                        PARTYFUN10
+                    </div>
+                    <button id="copy-code-btn" class="w-full sm:w-auto px-6 py-3 rounded-none bg-brand-teal text-white font-heading font-medium text-base hover:bg-brand-charcoal transition-all border-2 border-brand-charcoal shadow-[3px_3px_0px_0px_rgba(29,29,27,1)] hover:translate-x-[1px] hover:translate-y-[1px] hover:shadow-none flex items-center justify-center space-x-2">
+                        <i class="fa-regular fa-copy"></i>
+                        <span id="copy-btn-text">Copy Code</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT US SUMMARY SECTION (Cream Background) -->
+        <section class="py-20 bg-brand-cream px-4 sm:px-6 lg:px-8 border-b-2 border-brand-charcoal">
+            <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7 space-y-6">
+                    <h2 class="font-heading font-medium text-3xl sm:text-4xl text-brand-charcoal">Local Bluffton Neighbors Dedicated To Fun</h2>
+                    <p class="font-sans text-brand-charcoal/80 leading-relaxed text-base sm:text-lg">
+                        At Magnolia Party Rentals, we believe planning a party should be just as fun as throwing one! Founded right here in Bluffton, SC, we offer clean, durable, and super-fun party rentals backed by real-time online scheduling. No endless phone tag—just instant party planning!
+                    </p>
+                    <div>
+                        <a href="about.html" class="inline-block px-8 py-4 rounded-none bg-brand-teal text-white font-heading font-medium text-base hover:bg-brand-charcoal transition-all border-2 border-brand-charcoal shadow-[4px_4px_0px_0px_rgba(29,29,27,1)] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-none">
+                            About Us & FAQ
+                        </a>
+                    </div>
+                </div>
+                <div class="lg:col-span-5 rounded-none overflow-hidden border-2 border-brand-charcoal shadow-[8px_8px_0px_0px_rgba(29,29,27,1)] max-h-[350px]">
+                    <img 
+                        src="img/IMG_4282.JPG" 
+                        alt="Local Bluffton party and game rental team setup" 
+                        class="w-full h-full object-cover"
+                        onerror="this.src='https://placehold.co/1000x700/808BC5/1D1D1B?text=Bluffton+Party+Rentals'"
+                    />
+                </div>
+            </div>
+        </section>
+
+        <!-- GOT QUESTIONS BAR (Purple Periwinkle Accent Banner over Cream Base) -->
+        <section class="py-16 bg-brand-periwinkle border-b-2 border-brand-charcoal text-brand-cream">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <div class="max-w-3xl mx-auto space-y-6">
+                    <h2 class="font-heading font-medium text-3xl text-brand-cream">Got Questions About Your Event?</h2>
+                    <p class="font-sans text-brand-cream text-base sm:text-lg">
+                        Need help figuring out how many tables you need or which games fit your lawn space? Our local team is happy to help you pick the perfect party combo!
+                    </p>
+                    <div>
+                        <a href="contact.html" class="inline-block px-8 py-4 rounded-none bg-brand-teal text-white font-heading font-medium text-base hover:bg-brand-charcoal transition-all border-2 border-brand-charcoal shadow-[4px_4px_0px_0px_rgba(29,29,27,1)] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-none">
+                            Contact Us
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER (Brand Teal background) -->
+    <footer class="bg-brand-teal text-white border-t-4 border-brand-periwinkle py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
+            
+            <!-- Left / Center: Copyright & Legal Trigger -->
+            <div class="text-center md:text-left space-y-2">
+                <p class="font-logo text-3xl text-white">Magnolia Party Rentals</p>
+                <p class="font-sans text-xs text-white/80">
+                    &copy; 2026 Magnolia Party Rentals. All rights reserved. Bluffton & Hilton Head, SC.
+                </p>
+                <button id="terms-modal-trigger" class="font-sans text-xs text-brand-periwinkle underline hover:text-white transition-colors">
+                    Terms & Conditions
+                </button>
+            </div>
+
+            <!-- Right: Navigation Links -->
+            <div class="flex flex-wrap justify-center md:justify-end gap-6 font-heading font-medium text-xs tracking-wider">
+                <a href="index.html" class="hover:text-brand-periwinkle transition-colors">HOME</a>
+                <a href="contact.html" class="hover:text-brand-periwinkle transition-colors">CONTACT</a>
+                <a href="about.html" class="hover:text-brand-periwinkle transition-colors">ABOUT/FAQ</a>
+                <a href="catalog.html" class="hover:text-brand-periwinkle transition-colors">CATALOG</a>
+                <a href="cart.html" class="hover:text-brand-periwinkle transition-colors">CART</a>
+            </div>
+
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Navigation Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+
+        // Testimonials Auto-Slide Logic
+        let currentSlide = 0;
+        const totalSlides = 3;
+
+        function setSlide(index) {
+            currentSlide = index;
+            for (let i = 0; i < totalSlides; i++) {
+                const slide = document.getElementById(`slide-${i}`);
+                const dot = document.getElementsByClassName('slider-dot')[i];
+                if (slide && dot) {
+                    if (i === index) {
+                        slide.classList.remove('opacity-0', 'pointer-events-none');
+                        slide.classList.add('opacity-100');
+                        dot.classList.remove('bg-white/50');
+                        dot.classList.add('bg-brand-charcoal');
+                    } else {
+                        slide.classList.remove('opacity-100');
+                        slide.classList.add('opacity-0', 'pointer-events-none');
+                        dot.classList.remove('bg-brand-charcoal');
+                        dot.classList.add('bg-white/50');
+                    }
+                }
+            }
+        }
+
+        setInterval(() => {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            setSlide(currentSlide);
+        }, 5000);
+
+        // Copy Promo Code Button
+        const copyBtn = document.getElementById('copy-code-btn');
+        const copyBtnText = document.getElementById('copy-btn-text');
+
+        if (copyBtn) {
+            copyBtn.addEventListener('click', () => {
+                const tempInput = document.createElement('input');
+                tempInput.value = 'PARTYFUN10';
+                document.body.appendChild(tempInput);
+                tempInput.select();
+                document.execCommand('copy');
+                document.body.removeChild(tempInput);
+
+                if (copyBtnText) {
+                    copyBtnText.innerText = 'Copied!';
+                    setTimeout(() => {
+                        copyBtnText.innerText = 'Copy Code';
+                    }, 2000);
+                }
+            });
+        }
+    </script>
+</body>
+</html>
